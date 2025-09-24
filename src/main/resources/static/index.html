@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTP Token Generator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="toast-container" id="toastContainer"></div>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+    <div class="container">
+        <h1>TOTP Token Generator</h1>
+
+        <div class="form-group">
+            <label for="secret">Your Secret Key</label>
+            <input type="text" id="secret" placeholder="JBSWY3DPEHPK3PXP" value="JBSWY3DPEHPK3PXP">
+        </div>
+
+        <div class="grid">
+            <div class="form-group">
+                <label for="digits">Number of Digits</label>
+                <input type="text" id="digits" placeholder="6" value="6">
+            </div>
+
+            <div class="form-group">
+                <label for="period">Token Period (in seconds)</label>
+                <input type="text" id="period" placeholder="30" value="30">
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-text">Time remaining: <span id="countdown">30</span> seconds</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+        </div>
+
+        <div class="totp-display">
+            <div class="totp-code" id="totpCode">------</div>
+        </div>
+
+        <button class="copy-button" id="copyButton" title="Copy TOTP code">📋 Copy</button>
+    </div>
+
+    <script src="/js/totp.js"></script>
+</body>
+</html>
