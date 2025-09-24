@@ -1,0 +1,1 @@
+web: java -jar target/TOTPGenerator-1.0-SNAPSHOT.jar
