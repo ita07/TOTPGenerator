@@ -1,6 +1,7 @@
 # 🔑 TOTP Generator
-
 Time-based One-Time Password generator with real-time updates.
+
+<img width="1899" height="900" alt="image" src="https://github.com/user-attachments/assets/37c3e1ef-b219-42a5-8d55-d8d77570eb46" />
 
 ## ✨ Features
 
